@@ -1,16 +1,16 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
 from .forms import formularioView
 
 
 def formBase(request):
-    if request.method == 'POST':    
+    if request.method == 'POST':
         form = formularioView(request.POST)
+        form.nome = request.POST.get('nome', None)
         if form.is_valid():
             form.save()
-        else:
-            print("enviou")
-    else:
+            return redirect('/')
+            #return render(request, 'formbase.html', {'form': form})
+    else:    
         form = formularioView()
         return render(request, 'formbase.html', {'form': form})
 

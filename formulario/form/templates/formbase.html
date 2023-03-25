@@ -15,7 +15,7 @@
         <h1 class="nome-cabeca">Página de Inscrição.</h1>
     </header>
     <div class="pai">   
-        <form action="" id="formulario" class="formulario" method="POST">
+        <form action="{% url 'formulario_principal' %}" id="formulario" class="formulario" method="POST">
             {% csrf_token %}
             {% crispy form %}
             <!--<div class="secao1">
@@ -57,7 +57,6 @@
                 <label for="instagram" class="col-sm-6 col-form-label">Usuário do instagram: </label>
                 <input type="text" id="instagram" name="instagram" class="form-control" placeholder="Digite o seu usuário...">
             </div>-->
-            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
     <footer>
