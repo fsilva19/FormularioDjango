@@ -30,5 +30,6 @@ class formularioView(forms.ModelForm):
         self.fields['instituicao'].required = False
         self.fields['celular'].required = False
         self.fields['instagram'].required = False
+        self.fields['instituicao'].label = "Instituição"
 
         
