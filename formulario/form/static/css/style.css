@@ -7,6 +7,11 @@ html{
     display: grid;
     grid: 3;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body{
+    background-image: url("./imagens/background.jpg");
+    background-position: center;
 }
 #cabecalho{
     width: 100%;
@@ -15,6 +20,7 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgba(255,255,255,0.3);
 }
 .nome-cabeca{
     font-size: 30px;
@@ -24,8 +30,8 @@ html{
     width: 100%;
     height: 580px;
     display: grid;
-    background-image: url("./imagens/background.jpg");
-    background-position: center;
+    
+    
 }
 .formulario{ /*form*/
     display: grid;
@@ -33,9 +39,9 @@ html{
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 22px;
-    width: 520px;
+    width: 470px;
     color: black;
-    margin-top: 115px;
+    margin-top: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -47,21 +53,24 @@ html{
 .secao1, .form-group{/*CADA LINHA DO FORMULARIO*/
     display: flex;
     margin: auto;
+    padding-right: 85px;
 }
 .col-form-label, .requiredField{ /*TÍTULOS DE CADA LINHA*/
     width: 200px;
     font-size: 18px;
     display: flex;
     align-items: center;
-    justify-content: left;
-    text-align: left;
+    justify-content: right;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 15px;
 }
 .asteriskField{
     color: rgb(141, 0, 0);
 }
 .form-control, .custom-select{ /*INPUT DE CADA LINHA*/
     width: 300px;
-    height: 35px;
+    height: 45px;
     display: flex;
     margin: auto;
     align-items: flex-end;
@@ -94,14 +103,14 @@ html{
 }
 .btn-primary{ /*BOTÃO DE ENVIAR*/
     width: 100px;
-    height: 30px;
+    height: 40px;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-left: 157px;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 0;
     margin-top: 10px;
 }
@@ -110,7 +119,6 @@ html{
     
 }
 footer{
-    background-color: #f8f9fa;
     height: 60px;
     width: 100%;
     display: grid;
@@ -123,4 +131,5 @@ footer{
     color: #000000;
     font-weight:500;
     font-size: 16px;
+    background-color: rgba(255,255,255,0.3);
 }

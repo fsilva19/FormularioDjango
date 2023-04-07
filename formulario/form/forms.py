@@ -11,7 +11,12 @@ class formularioView(forms.ModelForm):
         
         fields = '__all__'
         widgets = {
-            'nascimento': DateInput()
+            'nascimento': DateInput(),
+            'nome': forms.TextInput({ "placeholder": "Fiubaoln da Silva Moura"}),
+            'curso': forms.TextInput({ "placeholder": "Bacharelado em Física"}),
+            'email': forms.TextInput({ "placeholder": "fiaubaln@email.com"}),
+            'celular': forms.TextInput({ "placeholder": "(DDD) XXXXX XXXX"}),
+            'instagram': forms.TextInput({ "placeholder": "@fiuba_mours"}),
         }
         
     
