@@ -1,4 +1,4 @@
-$( "#celular" ).keypress(function() {
+$( "#id_celular" ).keypress(function() {
     $(this).mask('(000) 00000-0000');
 });
 function mascaraCelular(telefone){
