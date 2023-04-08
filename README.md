@@ -29,3 +29,13 @@ O **Banco de Dados** utilizado foi o **SQLite**, padrão do framework. A manipul
 ## Listagem das informações captadas pelo Banco de Dados:
 <img src="https://github.com/fsilva19/FormularioDjango/blob/180134eb191e5465a49f1b29ddb4a7d1b675cc5d/formulario/imagens_readme/imagem4.png">
 
+# Partes principais dos códigos:
+
+## Criação da View da página e seus atributos no arquivos views.py:
+<img src="https://github.com/fsilva19/FormularioDjango/blob/d02fcca3f07919f70cabacbffaea311eb6385463/formulario/imagens_readme/views.png">
+
+## Como foi feita a criação do formulário no arquivo models.py:
+<img src="https://github.com/fsilva19/FormularioDjango/blob/d02fcca3f07919f70cabacbffaea311eb6385463/formulario/imagens_readme/models.png">
+
+## Modificação dos atributos a partir da biblioteca Crispy_forms no arquivo forms.py:
+<img src="https://github.com/fsilva19/FormularioDjango/blob/d02fcca3f07919f70cabacbffaea311eb6385463/formulario/imagens_readme/forms.png">
